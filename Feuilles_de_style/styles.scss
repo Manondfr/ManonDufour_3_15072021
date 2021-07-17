@@ -318,8 +318,16 @@ footer
             display:flex;
             justify-content: space-between;
         }
+
+        svg
+        {
+            @include tabletstyle{
+                display:none;
+            }
+        }
     }
 }
+
 
 #functioning
 {

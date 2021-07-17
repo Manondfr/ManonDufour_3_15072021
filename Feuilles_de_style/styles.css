@@ -323,6 +323,12 @@ footer ul, footer li, footer a {
   }
 }
 
+@media all and (min-width: 443px) {
+  footer ul svg, footer li svg, footer a svg {
+    display: none;
+  }
+}
+
 #functioning {
   padding-top: 20px;
   padding-bottom: 20px;
