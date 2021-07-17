@@ -7,6 +7,18 @@ $tertiary-color: #99E2D0;
 $background-color: #f6f6f6;
 $button-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 
+@mixin tabletstyle {
+    @media all and (min-width:443px){
+        @content;
+    }
+}
+
+@mixin desktopstyle {
+    @media all and (min-width:993px){
+        @content;
+    }
+}
+
 body
 {
     font-family: map-get($map: $font-family, $key: text), sans-serif;
@@ -25,9 +37,13 @@ header
     margin:0 auto;
     padding:15px 0px 10px 0px;
 
+
     img
     {
         width:40%;
+        @include tabletstyle{
+            width:20%;
+        }
     }
 }
 
@@ -41,6 +57,9 @@ h2
 {
     font-size: map-get($map: $font-size, $key: title);
     margin-left:15px;
+    @include tabletstyle{
+        text-align:center;
+    }
 }
 
 form
@@ -93,6 +112,14 @@ button
 ol
 {
     padding:0px;
+    @include tabletstyle{
+        display:flex;
+        justify-content:space-evenly;
+    }
+
+    @include desktopstyle(){
+        text-align:center;
+    }
 
     li
     {
@@ -107,6 +134,14 @@ ol
         list-style-type:none;
         position:relative;
         z-index:-1;
+        @include tabletstyle{
+            padding:10px 10px 10px 20px;
+            margin:0;
+            width:20%;
+        }
+        @include desktopstyle{
+            width:25%;
+        }
 
         span
         {
@@ -136,6 +171,10 @@ article
     height:250px;
     margin:20px 15px;
     position:relative;
+    @include tabletstyle{
+        min-width:20%;
+        max-width:350px;
+    }
 
     img
     {
@@ -183,6 +222,18 @@ a
     background-color: $background-color;
     text-align:center;
     padding:30px 45px 45px 45px;
+    @include tabletstyle{
+        background-image: url("../images/pizza-4952509_1920.jpg");
+        background-position-y: -50px;
+        background-position-x:90px;
+        background-size: cover;
+        color:$background-color;
+        font-weight:bold;
+    }
+    @include desktopstyle{
+        background-position-y: -350px;
+        background-position-x:300px;
+    }
 }
 
 
@@ -194,6 +245,9 @@ a
     top:22px;
     left:30px;
     fill:grey;
+    @include tabletstyle{
+        display:none;
+    }
 
     &:nth-child(3) {
         top:22px;
@@ -211,11 +265,20 @@ a
     background-color:rgba(147,86,220,0.1);
 }
 
-.mainContent
+main
 {
     background-color:$background-color;
     padding-top:20px;
     padding-bottom:20px;
+}
+
+#mainContent
+{
+    @include tabletstyle{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+    }
 }
 
 .article_new
@@ -233,7 +296,10 @@ a
 footer
 {
     background-color:#353535;
-    padding:10px 0px 20px 15px;
+    padding:10px 15px 20px 15px;
+    @include tabletstyle{
+        text-align:center;
+    }
 
     svg
     {
@@ -247,6 +313,11 @@ footer
         color:white;
         padding:3px 0px;
         margin:0;
+
+        @include tabletstyle{
+            display:flex;
+            justify-content: space-between;
+        }
     }
 }
 
