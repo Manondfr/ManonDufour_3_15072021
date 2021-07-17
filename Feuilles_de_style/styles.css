@@ -88,7 +88,21 @@ button {
 button:hover {
   -webkit-box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
           box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
-  background: linear-gradient(356deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  background: linear-gradient(356deg, #a978e3 0%, #ff94e1 100%);
+}
+
+@media all and (min-width: 443px) {
+  button:hover {
+    -webkit-box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media all and (min-width: 993px) {
+  button:hover {
+    -webkit-box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
+  }
 }
 
 ol {

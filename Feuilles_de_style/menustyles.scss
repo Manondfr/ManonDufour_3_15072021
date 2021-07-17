@@ -7,6 +7,18 @@ $tertiary-color: #99E2D0;
 $background-color: #f6f6f6;
 $button-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 
+@mixin tabletstyle {
+    @media all and (min-width:443px){
+        @content;
+    }
+}
+
+@mixin desktopstyle {
+    @media all and (min-width:993px){
+        @content;
+    }
+}
+
 body
 {
     font-family: map-get($map: $font-family, $key: text), sans-serif;
@@ -29,6 +41,9 @@ header
     img
     {
         width:40%;
+        @include tabletstyle{
+            width:20%;
+        }
     }
 
     svg
@@ -36,6 +51,9 @@ header
         position:absolute;
         left:20px;
         top:20px;
+        @include desktopstyle{
+            display:none;
+        }
     }
 }
 
@@ -49,7 +67,13 @@ header
     padding-right:20px;
     justify-content:space-between;
     align-items: center;
-
+    
+    @include tabletstyle{
+        width:60%;
+        justify-content: space-evenly;
+        margin:auto;
+        padding-right:0px;
+    }
 }
 
 h1
@@ -65,6 +89,9 @@ h2
     font-weight:300;
     margin-top:35px;
     margin-left:15px;
+    @include tabletstyle{
+        text-align:center;
+    }
     
     span
     {
@@ -129,6 +156,22 @@ main
     position:relative;
     top:-50px;
     padding-top:20px;
+    @include tabletstyle{
+        border-radius:50px 50px 0px 0px;
+    }
+
+    &__meals
+    {
+        @include tabletstyle{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+        @include desktopstyle{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 }
 
 
@@ -142,8 +185,15 @@ article
     height:45px;
     line-height:1.4rem;
     padding:10px 10px;
-    margin:20px 15px;;
+    margin:20px 15px;
     position:relative;
+
+    @include tabletstyle{
+        max-width:60%;
+    }
+    @include desktopstyle{
+        width:28%;
+    }
 
         svg
         {
@@ -152,6 +202,7 @@ article
             bottom:30px;
         }
 }
+
 
 a
 {
@@ -164,7 +215,10 @@ a
 footer
 {
     background-color:#353535;
-    padding:10px 0px 20px 15px;
+    padding:10px 15px 20px 15px;
+    @include tabletstyle{
+        text-align:center;
+    }
 
     svg
     {
@@ -178,8 +232,21 @@ footer
         color:white;
         padding:3px 0px;
         margin:0;
+
+        @include tabletstyle{
+            display:flex;
+            justify-content: space-between;
+        }
+
+        svg
+        {
+            @include tabletstyle{
+                display:none;
+            }
+        }
     }
 }
+
 
 #button
 {

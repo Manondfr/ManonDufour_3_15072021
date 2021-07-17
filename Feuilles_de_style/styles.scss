@@ -105,7 +105,14 @@ button
     &:hover
     {
         box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
-        background: linear-gradient(356deg, rgba(147,86,220,0.9) 0%, rgba(255,121,218,0.9) 100%);
+        background: linear-gradient(356deg, mix(white,rgba(147,86,220,1),20%) 0%, mix(white,rgba(255,121,218,1),20%) 100%);
+
+        @include tabletstyle{
+            box-shadow: 2px 5px 5px rgba($color: #FFFFFF, $alpha: 0.2);
+        }
+        @include desktopstyle(){
+            box-shadow: 2px 5px 5px rgba($color: #FFFFFF, $alpha: 0.2)
+        }
     }
 }
 
