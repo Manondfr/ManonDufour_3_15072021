@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>OhMyFood! - Entreprise de commande de repas en ligne</title>
+    <title>Menu - La palette du goût</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="Feuilles_de_style/styles.css">
+    <link rel="stylesheet" href="Feuilles_de_styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
@@ -13,88 +13,17 @@
 <body>
     <!-- Header -->
     <header>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg></p>
         <p><img src="images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood!"></p>
     </header>
 
-    <!-- Localisation -->
-    <section>
-        <form method="POST" action="#">
-            <p><svg width="13" height="13" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg></p>
-            <input type="text" name="citySearch" size="13" value="Paris, Belleville" disabled/>
-        </form>
-    </section>
-
-    <!-- Présentation de l'entreprise-->
-    <section class="compIntroduction">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button>Explorer nos restaurants</button>
-    </section>
-
-    <!-- Fonctionnement -->
-    <section id="functioning">
-        <h2>Fonctionnement</h2>
-        <div>
-            <ol>
-                <li><span>1<svg class="functioningSteps_circle" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>
-                </span><svg class="functioningSteps_icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/></svg>Choisissez un restaurant</li>
-                <li><span>2<svg class="functioningSteps_circle" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg></span><svg class="functioningSteps_icon" width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"/></svg><svg class="functioningSteps_icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>Composez votre menu</li>
-                <li id="functioningSteps--purple"><span>3<svg class="functioningSteps_circle" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg></span><svg class="functioningSteps_icon functioningSteps_icon--purple" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 617 512"><path d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"/></svg>Dégustez au restaurant</li>
-            </ol>
-        </div>
-    </section>
-
-    <!-- Contenu principal - Menus -->
-    <main class="mainContent">
+    <main>
         <section>
-            <h2>Restaurants</h2>
-
-            <article>
-                <a href="menu1-la_palette_du_gout.html">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photographie restaurant La palette du goût">
-                    <p class="article_new">Nouveau</p>
-                    <div class="articleText">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                        <p><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg></p>
-                    </div>                    
-                </a>
-            </article>
-
-            <article>
-                <a href="menu2-la_note_enchantee.html">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photographie restaurant La note enchantée">
-                    <p class="article_new">Nouveau</p>
-                    <div class="articleText">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                    <p><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg></p>
-                    </div>
-                </a>
-            </article>
-
-            <article>
-                <a href="menu3-a_la_francaise.html">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photographie restaurant À la française">
-                    <div class="articleText">
-                    <h3>À la française</h3>
-                    <p>Cité rouge</p>
-                    <p><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg></p>
-                    </div>
-                </a>
-            </article>
-
-            <article>
-                <a href="menu4-le_delice_des_sens.html">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photographie restaurant Le délice des sens">
-                    <div class="articleText">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                    <p><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg></p>
-                    </div>
-                </a>
-            </article>
-
+            <h1>La palette du goût <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg></h1>
+            <h2>ENTRÉES</h2>
+            <h2>PLATS</h2>
+            <h2>DESSERTS</h2>
+            <button>Commander</button>
         </section>
     </main>
 
@@ -110,12 +39,11 @@
             <path d="M190.526 21.816C190.478 22.008 190.454 22.14 190.454 22.212C190.454 22.38 190.502 22.512 190.598 22.608C190.694 22.704 190.814 22.752 190.958 22.752C191.246 22.752 191.486 22.632 191.678 22.392C191.894 22.128 192.038 21.996 192.11 21.996C192.23 21.996 192.326 22.08 192.398 22.248C192.47 22.416 192.506 22.608 192.506 22.824C192.53 23.472 192.278 24.132 191.75 24.804C191.246 25.476 190.562 26.028 189.698 26.46C188.834 26.892 187.898 27.108 186.89 27.108C185.69 27.108 184.646 26.88 183.758 26.424C182.87 25.968 182.258 25.368 181.922 24.624C181.274 25.464 180.53 26.088 179.69 26.496C178.85 26.904 177.962 27.108 177.026 27.108C175.922 27.108 174.89 26.832 173.93 26.28C172.994 25.728 172.238 24.948 171.662 23.94C171.11 22.908 170.834 21.744 170.834 20.448C170.834 18.264 171.242 16.212 172.058 14.292C172.898 12.348 174.062 10.788 175.55 9.612C177.038 8.412 178.73 7.812 180.626 7.812C181.658 7.812 182.534 7.932 183.254 8.172C183.998 8.412 184.67 8.772 185.27 9.252L186.494 5.22C186.566 5.004 186.602 4.824 186.602 4.68C186.602 4.416 186.53 4.2 186.386 4.032C186.266 3.864 186.098 3.696 185.882 3.528C185.642 3.336 185.462 3.168 185.342 3.024C185.246 2.88 185.234 2.688 185.306 2.448C185.45 1.896 186.206 1.416 187.574 1.00799C188.942 0.599996 190.37 0.395996 191.858 0.395996C193.25 0.395996 194.27 0.659996 194.918 1.188C195.59 1.716 195.926 2.436 195.926 3.348C195.926 3.876 195.842 4.392 195.674 4.896L190.526 21.816ZM184.514 11.7C184.13 11.364 183.71 11.196 183.254 11.196C182.558 11.196 181.874 11.712 181.202 12.744C180.53 13.776 179.99 15.024 179.582 16.488C179.174 17.952 178.982 19.272 179.006 20.448C179.006 21.768 179.438 22.428 180.302 22.428C180.614 22.428 180.878 22.308 181.094 22.068C181.31 21.804 181.514 21.384 181.706 20.808L184.514 11.7Z"/>
         </svg>
         <ul>
-            <li><svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512"><path d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"/></svg><a href="#">Proposer un restaurant</a></li>
-            <li><svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M488 192H336v56c0 39.7-32.3 72-72 72s-72-32.3-72-72V126.4l-64.9 39C107.8 176.9 96 197.8 96 220.2v47.3l-80 46.2C.7 322.5-4.6 342.1 4.3 357.4l80 138.6c8.8 15.3 28.4 20.5 43.7 11.7L231.4 448H368c35.3 0 64-28.7 64-64h16c17.7 0 32-14.3 32-32v-64h8c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24zm147.7-37.4L555.7 16C546.9.7 527.3-4.5 512 4.3L408.6 64H306.4c-12 0-23.7 3.4-33.9 9.7L239 94.6c-9.4 5.8-15 16.1-15 27.1V248c0 22.1 17.9 40 40 40s40-17.9 40-40v-88h184c30.9 0 56 25.1 56 56v28.5l80-46.2c15.3-8.9 20.5-28.4 11.7-43.7z"/></svg><a href="#">Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
+            <li><svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512"><path d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"/></svg>Proposer un restaurant</li>
+            <li><svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M488 192H336v56c0 39.7-32.3 72-72 72s-72-32.3-72-72V126.4l-64.9 39C107.8 176.9 96 197.8 96 220.2v47.3l-80 46.2C.7 322.5-4.6 342.1 4.3 357.4l80 138.6c8.8 15.3 28.4 20.5 43.7 11.7L231.4 448H368c35.3 0 64-28.7 64-64h16c17.7 0 32-14.3 32-32v-64h8c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24zm147.7-37.4L555.7 16C546.9.7 527.3-4.5 512 4.3L408.6 64H306.4c-12 0-23.7 3.4-33.9 9.7L239 94.6c-9.4 5.8-15 16.1-15 27.1V248c0 22.1 17.9 40 40 40s40-17.9 40-40v-88h184c30.9 0 56 25.1 56 56v28.5l80-46.2c15.3-8.9 20.5-28.4 11.7-43.7z"/></svg>Devenir partenaire</li>
+            <li>Mentions légales</li>
             <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
 </body>
 </html>
-

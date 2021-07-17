@@ -1,1 +1,226 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0px 10px 0px;
+}
+
+header img {
+  width: 40%;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0px 30px 10px 30px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-left: 15px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAEAEA;
+  -webkit-box-shadow: inset 0 8px 6px -6px rgba(128, 128, 128, 0.3);
+          box-shadow: inset 0 8px 6px -6px rgba(128, 128, 128, 0.3);
+  margin: 0;
+  height: 40px;
+}
+
+form input, form svg {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: transparent;
+}
+
+form svg {
+  position: relative;
+  left: -10px;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  background: linear-gradient(356deg, #9356dc 0%, #ff79da 100%);
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.3);
+          box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.3);
+  height: 40px;
+  color: white;
+  margin-top: 30px;
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
+          box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
+  background: linear-gradient(356deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+}
+
+ol {
+  padding: 0px;
+}
+
+ol li {
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 2px 5px 2px #e9e9e9;
+          box-shadow: 2px 2px 5px 2px #e9e9e9;
+  margin-top: 25px;
+  margin-left: 27px;
+  border-radius: 15px;
+  width: 70%;
+  padding: 20px 0px 20px 20%;
+  font-weight: bold;
+  list-style-type: none;
+  position: relative;
+  z-index: -1;
+}
+
+ol li span {
+  position: absolute;
+  left: -5px;
+  z-index: 1;
+  color: white;
+  font-weight: normal;
+}
+
+ol li .functioningSteps_circle {
+  position: absolute;
+  left: -8px;
+  top: -3px;
+  z-index: -1;
+  fill: #9356DC;
+}
+
+article {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.3);
+          box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.3);
+  width: 90%;
+  height: 250px;
+  margin: 20px 15px;
+  position: relative;
+}
+
+article img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+article .articleText {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  bottom: 0;
+  z-index: 1;
+  line-height: 0.3rem;
+  border-radius: 0px 0px 20px 20px;
+}
+
+article .articleText p, article .articleText h3 {
+  margin-left: 10px;
+}
+
+article .articleText svg {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.compIntroduction {
+  width: auto;
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 30px 45px 45px 45px;
+}
+
+.functioningSteps_icon {
+  margin-left: 0;
+  margin-right: 35px;
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  fill: grey;
+}
+
+.functioningSteps_icon:nth-child(3) {
+  top: 22px;
+  left: 38px;
+}
+
+.functioningSteps_icon.functioningSteps_icon--purple {
+  fill: #9356DC;
+}
+
+#functioningSteps--purple {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+
+.mainContent {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.article_new {
+  background-color: green;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 10px 0px 20px 15px;
+}
+
+footer svg {
+  fill: white;
+  margin-right: 10px;
+}
+
+footer ul, footer li, footer a {
+  list-style-type: none;
+  color: white;
+  padding: 3px 0px;
+  margin: 0;
+}
+
+#functioning {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,258 @@
+$font-family:(headings:"Shrikhand", text:"Roboto");
+$font-size:(title:1.3rem, text:0.9rem);
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #f6f6f6;
+$button-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+
+body
+{
+    font-family: map-get($map: $font-family, $key: text), sans-serif;
+    font-size:map-get($map: $font-size, $key: text);
+    margin:0;
+}
+
+p
+{
+    margin:0;
+}
+
+header
+{
+    text-align:center;
+    margin:0 auto;
+    padding:15px 0px 10px 0px;
+
+    img
+    {
+        width:40%;
+    }
+}
+
+h1
+{
+    font-size:map-get($map: $font-size, $key: title);
+    margin:0px 30px 10px 30px;
+}
+
+h2
+{
+    font-size: map-get($map: $font-size, $key: title);
+    margin-left:15px;
+}
+
+form
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;  
+    box-shadow: inset 0 8px 6px -6px rgba(128, 128, 128, 0.3); 
+    margin:0;
+    height:40px;
+
+    input,svg
+    {
+        font-family: map-get($map: $font-family, $key:text), sans-serif;
+        font-size: map-get($map: $font-size, $key: text);
+        font-weight:bold;
+        background-color: transparent;
+        border:transparent;
+    }
+
+    svg
+    {
+        position:relative;
+        left:-10px;
+    }
+}
+
+button
+{
+    font-family: map-get($map: $font-family, $key:text), sans-serif;
+    font-size: map-get($map: $font-size, $key: text);
+    background: $button-color;
+    border:none;
+    border-radius:25px;
+    box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.3);
+    height:40px;
+    color:white;
+    margin-top:30px;
+    padding:0px 15px 0px 15px;
+    cursor:pointer;
+
+    &:hover
+    {
+        box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
+        background: linear-gradient(356deg, rgba(147,86,220,0.9) 0%, rgba(255,121,218,0.9) 100%);
+    }
+}
+
+ol
+{
+    padding:0px;
+
+    li
+    {
+        background-color: $background-color;
+        box-shadow: 2px 2px 5px 2px darken($background-color,5%);
+        margin-top:25px;
+        margin-left:27px;
+        border-radius:15px;
+        width:70%;
+        padding:20px 0px 20px 20%;
+        font-weight:bold;
+        list-style-type:none;
+        position:relative;
+        z-index:-1;
+
+        span
+        {
+            position:absolute;
+            left:-5px;
+            z-index:1;
+            color:white;
+            font-weight:normal;
+        }
+
+        .functioningSteps_circle
+        {
+            position:absolute;
+            left:-8px;
+            top:-3px;
+            z-index:-1;
+            fill: $primary-color;
+        }
+    }
+}
+
+article
+{
+    border-radius:20px;
+    box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.3);
+    width:90%;
+    height:250px;
+    margin:20px 15px;
+    position:relative;
+
+    img
+    {
+        width:100%;
+        height:100%;
+        border-radius:20px;
+    }
+
+    .articleText
+    {
+        background-color: white;
+        position:absolute;
+        width:100%;
+        height:25%;
+        bottom:0;
+        z-index:1;
+        line-height: 0.3rem;
+        border-radius:0px 0px 20px 20px;
+
+        p, h3
+        {
+            margin-left:10px;
+        }
+
+
+        svg
+        {
+            position:absolute;
+            right:15px;
+            bottom:30px;
+        }
+    }
+}
+
+a
+{
+    color:black;
+    text-decoration: none;
+}
+
+
+.compIntroduction
+{
+    width:auto;
+    background-color: $background-color;
+    text-align:center;
+    padding:30px 45px 45px 45px;
+}
+
+
+.functioningSteps_icon
+{
+    margin-left:0;
+    margin-right:35px;
+    position:absolute;
+    top:22px;
+    left:30px;
+    fill:grey;
+
+    &:nth-child(3) {
+        top:22px;
+        left:38px;
+    }
+
+    &.functioningSteps_icon--purple
+    {
+        fill:$primary-color;
+    }
+}
+
+#functioningSteps--purple
+{
+    background-color:rgba(147,86,220,0.1);
+}
+
+.mainContent
+{
+    background-color:$background-color;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.article_new
+{
+    background-color:green;
+    position:absolute;
+    top:10px;
+    right:15px;
+    background-color: $tertiary-color;
+    color:darken($tertiary-color, 40%);
+    font-weight:bold;
+    padding:5px 10px 5px 10px;
+}
+
+footer
+{
+    background-color:#353535;
+    padding:10px 0px 20px 15px;
+
+    svg
+    {
+        fill:white;
+        margin-right:10px;
+    }
+
+    ul, li, a
+    {
+        list-style-type:none;
+        color:white;
+        padding:3px 0px;
+        margin:0;
+    }
+}
+
+#functioning
+{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
