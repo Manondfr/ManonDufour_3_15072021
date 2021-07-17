@@ -142,10 +142,14 @@ main
 
 #restImage
 {
-    background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") fixed no-repeat top;
-    background-attachment: scroll;
-    background-size: cover;
-    height:250px; 
+    object-fit: cover;
+    overflow:hidden;
+    height:250px;
+
+    img
+    {
+        width:100%;
+    }
 }
 
 
@@ -189,7 +193,7 @@ article
     position:relative;
 
     @include tabletstyle{
-        max-width:60%;
+        max-width:65%;
     }
     @include desktopstyle{
         width:28%;
