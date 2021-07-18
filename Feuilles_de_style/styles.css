@@ -83,23 +83,33 @@ button {
   margin-top: 30px;
   padding: 0px 15px 0px 15px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
-button:hover {
+button:hover::after {
+  opacity: 1;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(356deg, #a978e3 0%, #ff94e1 100%);
   -webkit-box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
           box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.4);
-  background: linear-gradient(356deg, #a978e3 0%, #ff94e1 100%);
+  opacity: 0;
+  z-index: -1;
+  border-radius: 25px;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
 @media all and (min-width: 443px) {
-  button:hover {
-    -webkit-box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
-            box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
-  }
-}
-
-@media all and (min-width: 993px) {
-  button:hover {
+  button::after {
     -webkit-box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
             box-shadow: 2px 5px 5px rgba(255, 255, 255, 0.2);
   }
