@@ -1,5 +1,6 @@
+/* Maps et variables */
 $font-family:(headings:"Shrikhand", text:"Roboto");
-$font-size:(title:1.3rem, text:0.9rem);
+$font-size:(title:1.3rem, text:0.8rem);
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
@@ -7,6 +8,8 @@ $tertiary-color: #99E2D0;
 $background-color: #f6f6f6;
 $button-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 
+
+/* Mixins */
 @mixin tabletstyle {
     @media all and (min-width:443px){
         @content;
@@ -19,32 +22,37 @@ $button-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1
     }
 }
 
-body
+/* Keyframes */
+@keyframes heartfilling {
+    0% {
+        transform: scale(0);
+        opacity:0.2;
+    }
+    55% {
+        opacity:0.3;
+    }
+    85% {
+        opacity:0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity:1;
+    }
+}
+
+/* Mise en page */
+/* Balises générales et header*/
+body, p, input
 {
     font-family: map-get($map: $font-family, $key: text), sans-serif;
     font-size:map-get($map: $font-size, $key: text);
     margin:0;
 }
 
-p
+a
 {
-    margin:0;
-}
-
-header
-{
-    text-align:center;
-    margin:0 auto;
-    padding:15px 0px 10px 0px;
-
-
-    img
-    {
-        width:40%;
-        @include tabletstyle{
-            width:20%;
-        }
-    }
+    color:black;
+    text-decoration: none;
 }
 
 h1
@@ -62,6 +70,29 @@ h2
     }
 }
 
+header
+{
+    text-align:center;
+    margin:0 auto;
+    padding:15px 0px 10px 0px;
+
+    img
+    {
+        width:40%;
+        @include tabletstyle{
+            width:20%;
+        }
+    }
+}
+
+main
+{
+    background-color:$background-color;
+    padding:20px 0px;
+}
+
+
+/* Localisation et présentation de l'entreprise */
 form
 {
     display:flex;
@@ -69,13 +100,11 @@ form
     align-items: center;
     background-color: #EAEAEA;  
     box-shadow: inset 0 8px 6px -6px rgba(128, 128, 128, 0.3); 
-    margin:0;
+    margin-bottom:10px;
     height:40px;
 
     input,svg
     {
-        font-family: map-get($map: $font-family, $key:text), sans-serif;
-        font-size: map-get($map: $font-size, $key: text);
         font-weight:bold;
         background-color: transparent;
         border:transparent;
@@ -85,6 +114,28 @@ form
     {
         position:relative;
         left:-10px;
+    }
+}
+
+#compIntroduction
+{
+    width:auto;
+    background-color: $background-color;
+    text-align:center;
+    @include tabletstyle{
+        background-image: url("../images/pizza-4952509_1920.jpg");
+        background-position:90px -50px;
+        background-size: cover;
+        color:$background-color;
+        font-weight:bold;
+    }
+    @include desktopstyle{
+        background-position: 300px -350px;
+    }
+
+    &__text
+    {
+        padding:20px 40px 45px 40px;
     }
 }
 
@@ -129,19 +180,17 @@ button
         @include tabletstyle{
             box-shadow: 2px 5px 5px rgba($color: #FFFFFF, $alpha: 0.2);
         }
-
     }
 }
 
+
+/* Fonctionnement */
 ol
 {
     padding:0px;
     @include tabletstyle{
         display:flex;
         justify-content:space-evenly;
-    }
-
-    @include desktopstyle(){
         text-align:center;
     }
 
@@ -149,11 +198,10 @@ ol
     {
         background-color: $background-color;
         box-shadow: 2px 2px 5px 2px darken($background-color,5%);
-        margin-top:25px;
-        margin-left:27px;
+        margin:25px 0px 0px 27px;
+        padding:20px 0px 20px 20%;
         border-radius:15px;
         width:70%;
-        padding:20px 0px 20px 20%;
         font-weight:bold;
         list-style-type:none;
         position:relative;
@@ -165,25 +213,69 @@ ol
         }
         @include desktopstyle{
             width:25%;
+        }  
+    }
+}
+
+.functioningSteps
+{
+    padding:20px 0px;
+  
+    &__number
+    {
+        position:absolute;
+        left:-5px;
+        z-index:1;
+        color:white;
+        font-weight:normal;
+    }
+
+    &__circle
+    {
+        position:absolute;
+        left:-8px;
+        top:-4px;
+        z-index:-1;
+        fill: $primary-color;
+    }
+
+    &__icon
+    {
+        margin-right: 35px;
+        position:absolute;
+        top:20px;
+        left:30px;
+        fill:grey;
+        @include tabletstyle{
+            display:none;
         }
 
-        span
+        &:nth-child(3)
         {
-            position:absolute;
-            left:-5px;
-            z-index:1;
-            color:white;
-            font-weight:normal;
+            top:20px;
+            left:38px;
         }
 
-        .functioningSteps_circle
+        &--purple
         {
-            position:absolute;
-            left:-8px;
-            top:-3px;
-            z-index:-1;
-            fill: $primary-color;
+            fill:$primary-color;
         }
+    }
+
+    &--purple
+    {
+        background-color:rgba(147,86,220,0.1);
+    } 
+}
+
+
+/* Contenu principal - Menus */
+#mainContent
+{
+    @include tabletstyle{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
     }
 }
 
@@ -206,106 +298,9 @@ article
         height:100%;
         border-radius:20px;
     }
-
-    .articleText
-    {
-        background-color: white;
-        position:absolute;
-        width:100%;
-        height:25%;
-        bottom:0;
-        z-index:1;
-        line-height: 0.3rem;
-        border-radius:0px 0px 20px 20px;
-
-        p, h3
-        {
-            margin-left:10px;
-        }
-
-
-        svg
-        {
-            position:absolute;
-            right:15px;
-            bottom:30px;
-        }
-    }
 }
 
-a
-{
-    color:black;
-    text-decoration: none;
-}
-
-
-.compIntroduction
-{
-    width:auto;
-    background-color: $background-color;
-    text-align:center;
-    padding:30px 45px 45px 45px;
-    @include tabletstyle{
-        background-image: url("../images/pizza-4952509_1920.jpg");
-        background-position-y: -50px;
-        background-position-x:90px;
-        background-size: cover;
-        color:$background-color;
-        font-weight:bold;
-    }
-    @include desktopstyle{
-        background-position-y: -350px;
-        background-position-x:300px;
-    }
-}
-
-
-.functioningSteps_icon
-{
-    margin-left:0;
-    margin-right:35px;
-    position:absolute;
-    top:22px;
-    left:30px;
-    fill:grey;
-    @include tabletstyle{
-        display:none;
-    }
-
-    &:nth-child(3) {
-        top:22px;
-        left:38px;
-    }
-
-    &.functioningSteps_icon--purple
-    {
-        fill:$primary-color;
-    }
-}
-
-#functioningSteps--purple
-{
-    background-color:rgba(147,86,220,0.1);
-}
-
-main
-{
-    background-color:$background-color;
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-#mainContent
-{
-    @include tabletstyle{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-evenly;
-    }
-}
-
-.article_new
+.mainContentArticle__new
 {
     background-color:green;
     position:absolute;
@@ -317,6 +312,60 @@ main
     padding:5px 10px 5px 10px;
 }
 
+.mainContentArticle__text
+{
+    background-color: white;
+    position:absolute;
+    width:100%;
+    height:25%;
+    bottom:0;
+    z-index:1;
+    line-height: 0.3rem;
+    border-radius:0px 0px 20px 20px;
+
+    p, h3
+    {
+        margin-left:10px;
+    }
+}
+
+.mainContentArticle__heart
+{
+    position:absolute;
+    width:100%;
+    height:30px;
+    top:15px;
+
+    .mainContentArticle__emptyHeart:hover {
+        & > .mainContentArticle__fullHeart {
+            opacity:1;
+            fill:$secondary-color;
+            animation-name:heartfilling;
+            animation-duration:350ms;
+            animation-fill-mode:both;
+            animation-timing-function: ease-in;
+        }
+    }
+
+    .mainContentArticle__emptyHeart {
+        position:absolute;
+        right:10px;
+    }
+    
+    .mainContentArticle__fullHeart {
+
+        position:absolute;
+        top:2px;
+        bottom:0;
+        left:0;
+        right:0;
+        transform-origin:68% 80%;
+        opacity:0;
+    } 
+}
+
+
+/* Footer */
 footer
 {
     background-color:#353535;
@@ -342,20 +391,12 @@ footer
             display:flex;
             justify-content: space-between;
         }
-
-        svg
-        {
-            @include tabletstyle{
-                display:none;
-            }
-        }
     }
+
+    .footer__icons
+    {
+        @include tabletstyle{
+            display:none;
+        }
+    }   
 }
-
-
-#functioning
-{
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
