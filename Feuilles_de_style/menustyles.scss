@@ -1,6 +1,6 @@
 /* Maps et variables */
 $font-family:(headings:"Shrikhand", text:"Roboto");
-$font-size:(title:1.6rem, text:0.8rem);
+$font-size:(title:1.4rem, text:0.8rem);
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
@@ -184,8 +184,6 @@ main
     &__emptyHeart:hover {
 
         & > .mainContentTitle__fullHeart {
-            opacity:1;
-            fill:$secondary-color;
             animation-name:heartfilling;
             animation-duration:350ms;
             animation-fill-mode:both;
@@ -199,13 +197,21 @@ main
     
     &__fullHeart {
         position:absolute;
-        bottom:0;
-        top:2px;
+        bottom:0px;
+        top:-1.5px;
         left:0;
         right:0;
         transform-origin:50% 80%;
         opacity:0;
-    }   
+
+        .stop1 {
+            stop-color: $primary-color;
+          }
+    
+        .stop2 {
+            stop-color: $secondary-color;
+          }
+    }
 }
 
 .mainContent
@@ -279,20 +285,20 @@ main
 
             }
 
-            & svg
+            & .onClickCheck__icon
             {
                 transform: rotate(0turn);
             }
 
             & h3, p:nth-child(2)
             {
-                width:220px;
+                width:70%;
                 }
             }
 
         }
 
-    svg
+    .onClickCheck__icon
     {
         transform: rotate(-0.5turn);
         transition: transform 400ms 50ms;
@@ -301,7 +307,8 @@ main
 
     h3, p:nth-child(2)
     {
-        width:250px;
+        width:80%;
+        transition:width 250ms 50ms;
         text-overflow:ellipsis;
         overflow:hidden;
         white-space: nowrap;

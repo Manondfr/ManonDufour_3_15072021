@@ -223,7 +223,8 @@ ol li {
 @media all and (min-width: 443px) {
   ol li {
     padding: 10px 10px 10px 20px;
-    margin: 0;
+    margin: 30px 5px 0px 5px;
+    padding-left: 25px;
     width: 20%;
   }
 }
@@ -246,6 +247,14 @@ ol li {
   font-weight: normal;
 }
 
+@media all and (min-width: 443px) {
+  .functioningSteps__number {
+    left: 50%;
+    top: -17px;
+    z-index: -1;
+  }
+}
+
 .functioningSteps__circle {
   position: absolute;
   left: -8px;
@@ -264,13 +273,9 @@ ol li {
 
 @media all and (min-width: 443px) {
   .functioningSteps__icon {
-    display: none;
+    top: 10px;
+    left: 10px;
   }
-}
-
-.functioningSteps__icon:nth-child(3) {
-  top: 20px;
-  left: 38px;
 }
 
 .functioningSteps__icon--purple {
@@ -279,6 +284,22 @@ ol li {
 
 .functioningSteps--purple {
   background-color: rgba(147, 86, 220, 0.1);
+}
+
+#desktopIcon {
+  display: none;
+}
+
+@media all and (min-width: 993px) {
+  #desktopIcon {
+    display: initial;
+  }
+}
+
+@media all and (min-width: 993px) {
+  #mobileIcon {
+    display: none;
+  }
 }
 
 /* Contenu principal - Menus */
@@ -303,6 +324,7 @@ article {
   height: 250px;
   margin: 20px 15px;
   position: relative;
+  overflow: hidden;
 }
 
 @media all and (min-width: 443px) {
@@ -314,7 +336,7 @@ article {
 
 article img {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   border-radius: 20px;
 }
 
@@ -352,8 +374,6 @@ article img {
 }
 
 .mainContentArticle__heart .mainContentArticle__emptyHeart:hover > .mainContentArticle__fullHeart {
-  opacity: 1;
-  fill: #FF79DA;
   -webkit-animation-name: heartfilling;
           animation-name: heartfilling;
   -webkit-animation-duration: 350ms;
@@ -371,13 +391,21 @@ article img {
 
 .mainContentArticle__heart .mainContentArticle__fullHeart {
   position: absolute;
-  top: 2px;
+  top: -2px;
   bottom: 0;
   left: 0;
   right: 0;
   -webkit-transform-origin: 68% 80%;
           transform-origin: 68% 80%;
   opacity: 0;
+}
+
+.mainContentArticle__heart .mainContentArticle__fullHeart .stop1 {
+  stop-color: #9356DC;
+}
+
+.mainContentArticle__heart .mainContentArticle__fullHeart .stop2 {
+  stop-color: #FF79DA;
 }
 
 /* Footer */

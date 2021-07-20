@@ -129,7 +129,7 @@ a {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "Shrikhand";
   margin: 10px 0px;
 }
@@ -238,8 +238,6 @@ main {
 }
 
 .mainContentTitle__emptyHeart:hover > .mainContentTitle__fullHeart {
-  opacity: 1;
-  fill: #FF79DA;
   -webkit-animation-name: heartfilling;
           animation-name: heartfilling;
   -webkit-animation-duration: 350ms;
@@ -256,13 +254,21 @@ main {
 
 .mainContentTitle__fullHeart {
   position: absolute;
-  bottom: 0;
-  top: 2px;
+  bottom: 0px;
+  top: -1.5px;
   left: 0;
   right: 0;
   -webkit-transform-origin: 50% 80%;
           transform-origin: 50% 80%;
   opacity: 0;
+}
+
+.mainContentTitle__fullHeart .stop1 {
+  stop-color: #9356DC;
+}
+
+.mainContentTitle__fullHeart .stop2 {
+  stop-color: #FF79DA;
 }
 
 .mainContent {
@@ -399,16 +405,16 @@ main {
           animation-fill-mode: both;
 }
 
-.mainContent__dish:hover svg {
+.mainContent__dish:hover .onClickCheck__icon {
   -webkit-transform: rotate(0turn);
           transform: rotate(0turn);
 }
 
 .mainContent__dish:hover h3, .mainContent__dish:hover p:nth-child(2) {
-  width: 220px;
+  width: 70%;
 }
 
-.mainContent svg {
+.mainContent .onClickCheck__icon {
   -webkit-transform: rotate(-0.5turn);
           transform: rotate(-0.5turn);
   -webkit-transition: -webkit-transform 400ms 50ms;
@@ -419,7 +425,9 @@ main {
 }
 
 .mainContent h3, .mainContent p:nth-child(2) {
-  width: 250px;
+  width: 80%;
+  -webkit-transition: width 250ms 50ms;
+  transition: width 250ms 50ms;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
