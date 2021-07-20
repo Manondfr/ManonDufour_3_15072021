@@ -314,12 +314,25 @@ main {
   line-height: 1.4rem;
   padding: 10px 10px;
   margin: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
   -webkit-animation: mealappearance 800ms 250ms both;
           animation: mealappearance 800ms 250ms both;
+  /* p:nth-child(3)
+        {
+            text-align:right;
+            position:relative;
+            bottom:20px;
+            right:10px;
+        } */
 }
 
 .mainContent__dish--1 {
@@ -379,7 +392,7 @@ main {
   }
 }
 
-.mainContent__dish:hover > p:nth-child(3) {
+.mainContent__dish:hover > p {
   -webkit-animation: p-displacement;
           animation: p-displacement;
   -webkit-animation-duration: 300ms;
@@ -388,6 +401,7 @@ main {
           animation-delay: 50ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  border: green solid 1px;
 }
 
 .mainContent__dish:hover > .onClickCheck {
@@ -404,11 +418,18 @@ main {
           transform: rotate(0turn);
 }
 
-.mainContent__dish:hover h3, .mainContent__dish:hover p:nth-child(2) {
-  width: 220px;
+.mainContent__dish .try {
+  border: blue solid 1px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.mainContent svg {
+.mainContent__dish .try + p {
+  border: red solid 1px;
+}
+
+.mainContent__dish svg {
   -webkit-transform: rotate(-0.5turn);
           transform: rotate(-0.5turn);
   -webkit-transition: -webkit-transform 400ms 50ms;
@@ -416,20 +437,6 @@ main {
   transition: transform 400ms 50ms;
   transition: transform 400ms 50ms, -webkit-transform 400ms 50ms;
   fill: white;
-}
-
-.mainContent h3, .mainContent p:nth-child(2) {
-  width: 250px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.mainContent p:nth-child(3) {
-  text-align: right;
-  position: relative;
-  bottom: 20px;
-  right: 10px;
 }
 
 .onClickCheck {
@@ -539,4 +546,4 @@ footer ul, footer li, footer a {
     display: none;
   }
 }
-/*# sourceMappingURL=menustyles.css.map */
+/*# sourceMappingURL=menustylesTRY.css.map */

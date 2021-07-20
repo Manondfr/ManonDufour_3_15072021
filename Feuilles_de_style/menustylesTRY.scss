@@ -241,6 +241,8 @@ main
         line-height:1.4rem;
         padding:10px 10px;
         margin:20px 15px;
+        display:flex;
+        justify-content: space-between;
         position:relative;
         opacity:0;
         overflow:hidden;
@@ -263,12 +265,13 @@ main
 
         &:hover
         {
-            & > p:nth-child(3) 
+            & > p
             {
                 animation:p-displacement;
                 animation-duration:300ms;
                 animation-delay:50ms;
                 animation-fill-mode:both;
+                border:green solid 1px;
             }
 
             & > .onClickCheck
@@ -284,38 +287,37 @@ main
                 transform: rotate(0turn);
             }
 
-            & h3, p:nth-child(2)
-            {
-                width:220px;
-                }
-            }
-
         }
 
-    svg
-    {
-        transform: rotate(-0.5turn);
-        transition: transform 400ms 50ms;
-        fill:white;
-    }
+        .try
+        {
+            border:blue solid 1px;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            white-space: nowrap;
 
-    h3, p:nth-child(2)
-    {
-        width:250px;
-        text-overflow:ellipsis;
-        overflow:hidden;
-        white-space: nowrap;
-    }
+            & + p
+            {
+                border:red solid 1px;
+            }
+        }
+        
+        /* p:nth-child(3)
+        {
+            text-align:right;
+            position:relative;
+            bottom:20px;
+            right:10px;
+        } */
 
-    p:nth-child(3)
-    {
-        text-align:right;
-        position:relative;
-        bottom:20px;
-        right:10px;
+        svg
+        {
+            transform: rotate(-0.5turn);
+            transition: transform 400ms 50ms;
+            fill:white;
+        }
     }
 }
-
 
 .onClickCheck
 {
