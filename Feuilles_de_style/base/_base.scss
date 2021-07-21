@@ -1,8 +1,8 @@
 // Utils
 @import "../utils/variables";
-@import "../utils/mixins";
-@import "../utils/keyframes";
 
+
+/* PARTIE BALISES GENERALES (COMMUNES A TOUTES LES PAGES) */
 body, p, input
 {
     font-family: map-get($map: $font-family, $key: text), sans-serif;

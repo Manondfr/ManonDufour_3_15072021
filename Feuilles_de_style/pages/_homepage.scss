@@ -1,9 +1,8 @@
 // Utils
 @import "../utils/variables";
 @import "../utils/mixins";
-@import "../utils/keyframes";
 
-
+/* PARTIE BLOCS DE CODE SPECIFIQUES PAGE D'ACCUEIL */
 /* Loading spinner */
 .container
 {
@@ -27,7 +26,6 @@
 
     }
 }
-
 
 .loadingZone__loadCircles
 {
@@ -83,8 +81,7 @@
 }
 
 
-/* Mise en page */
-/* Balises générales et header*/
+/* Balises générales*/
 h1
 {
     margin:0px 30px 10px 30px;
