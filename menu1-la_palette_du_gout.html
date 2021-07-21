@@ -4,22 +4,20 @@
     <title>Menu - La palette du goût</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Feuilles_de_style/menustyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Loader -->
-
-    
     <!-- Header -->
     <header>
         <p><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 448 512"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg></a></p>
         <p><img src="images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood!"></p>
     </header>
 
+    <!-- Carte du restaurant -->
     <main>
         <section>
             <div id="restImage">
@@ -28,8 +26,8 @@
             <div class="mainContent">
                 <div class="mainContentTitle">
                     <h1>La palette du goût</h1>
-                    <div class="mainContentTitle__emptyHeart"><p><svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg></p>
-                        <div class="mainContentTitle__fullHeart">
+                    <div class="mainContent__emptyHeart"><p><svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg></p>
+                        <div class="mainContent__fullHeart">
                             <p>
                                 <svg width="25" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <linearGradient id="gradient" gradientTransform="rotate(100)">
@@ -42,96 +40,97 @@
                         </div>
                     </div>
                 </div>
-            <h2><span>ENTR</span>ÉES</h2>
-            <div class="mainContent__meals">
-            <article class="mainContent__dish mainContent__dish--1">
-                <h3>Fricassée d'escargot</h3>
-                <p>Au piment d'espelette</p>
-                <p><strong>25€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                <h2><span>ENTR</span>ÉES</h2>
+                <div class="mainContent__meals">
+                    <article class="mainContent__dish mainContent__dish--1">
+                        <h3>Fricassée d'escargot</h3>
+                        <p>Au piment d'espelette</p>
+                        <p><strong>25€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
+                    <article class="mainContent__dish mainContent__dish--2">
+                        <h3>Foie gras de canard mi-cuit</h3>
+                        <p>Et ses copeaux de truffe noire</p>
+                        <p><strong>35€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
+                    <article class="mainContent__dish mainContent__dish--3">
+                        <h3>Oeuf au plat</h3>
+                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                        <p><strong>20€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="mainContent__dish mainContent__dish--2">
-                <h3>Foie gras de canard mi-cuit</h3>
-                <p>Et ses copeaux de truffe noire</p>
-                <p><strong>35€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
-                </div>
-            </article>
-            <article class="mainContent__dish mainContent__dish--3">
-                <h3>Oeuf au plat</h3>
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-                <p><strong>20€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
-                </div>
-            </article>
-            </div>
 
-            <h2><span>PLAT</span>S</h2>
-            <div class="mainContent__meals">
-            <article class="mainContent__dish mainContent__dish--4">
-                <h3>Filet de boeuf aux herbes</h3>
-                <p>Accompagné de sa ribambelle de légumes</p>
-                <p><strong>40€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                <h2><span>PLAT</span>S</h2>
+                <div class="mainContent__meals">
+                    <article class="mainContent__dish mainContent__dish--4">
+                        <h3>Filet de boeuf aux herbes</h3>
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                        <p><strong>40€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
+                    <article class="mainContent__dish mainContent__dish--5">
+                        <h3>Parmentier de queue de boeuf</h3>
+                        <p>A la truffe noire sur sa purée de panais</p>
+                        <p><strong>35€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
+                    <article class="mainContent__dish mainContent__dish--6">
+                        <h3>Filet de Turbot</h3>
+                        <p>Aux agrumes</p>
+                        <p><strong>44€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="mainContent__dish mainContent__dish--5">
-                <h3>Parmentier de queue de boeuf</h3>
-                <p>A la truffe noire sur sa purée de panais</p>
-                <p><strong>35€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
-                </div>
-            </article>
-            <article class="mainContent__dish mainContent__dish--6">
-                <h3>Filet de Turbot</h3>
-                <p>Aux agrumes</p>
-                <p><strong>44€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
-                </div>
-            </article>
-            </div>
 
-            <h2><span>DESS</span>ERTS</h2>
-            <div class="mainContent__meals">
-            <article class="mainContent__dish mainContent__dish--7">
-                <h3>Paris-Brest</h3>
-                <p>Revisité</p>
-                <p><strong>18€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                <h2><span>DESS</span>ERTS</h2>
+                <div class="mainContent__meals">
+                    <article class="mainContent__dish mainContent__dish--7">
+                        <h3>Paris-Brest</h3>
+                        <p>Revisité</p>
+                        <p><strong>18€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
+                    <article class="mainContent__dish mainContent__dish--8">
+                        <h3>Macaron au chocolat d'exception</h3>
+                        <p>Et glace à la vanille de Madagascar</p>
+                        <p><strong>22€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
+                    <article class="mainContent__dish mainContent__dish--9">
+                        <h3>Mousse au chocolat</h3>
+                        <p>Au piment d'espelette et à la truffe noire</p>
+                        <p><strong>23€</strong></p>
+                        <div class="onClickCheck">
+                            <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="mainContent__dish mainContent__dish--8">
-                <h3>Macaron au chocolat d'exception</h3>
-                <p>Et glace à la vanille de Madagascar</p>
-                <p><strong>22€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
+                <div id="button">
+                    <button>Commander</button>
                 </div>
-            </article>
-            <article class="mainContent__dish mainContent__dish--9">
-                <h3>Mousse au chocolat</h3>
-                <p>Au piment d'espelette ou à la truffe noire</p>
-                <p><strong>23€</strong></p>
-                <div class="onClickCheck">
-                    <p><svg class="onClickCheck__icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg></p>
-                </div>
-            </article>
-            </div>
-            <div id="button">
-            <button>Commander</button>
-            </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <svg width="90" height="34" viewBox="0 0 196 34" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.932 7.956C17.196 7.956 19.596 8.61599 21.132 9.936C22.692 11.256 23.472 12.984 23.472 15.12C23.472 15.84 23.376 16.644 23.184 17.532C22.728 19.5 21.876 21.228 20.628 22.716C19.38 24.18 17.844 25.32 16.02 26.136C14.22 26.928 12.264 27.324 10.152 27.324C6.81599 27.324 4.34399 26.664 2.73599 25.344C1.15199 24 0.359985 22.224 0.359985 20.016C0.359985 19.272 0.455985 18.444 0.647985 17.532C1.10399 15.66 1.96799 14.004 3.23999 12.564C4.53599 11.1 6.10799 9.972 7.95599 9.18C9.82799 8.364 11.82 7.956 13.932 7.956ZM13.824 11.16C13.32 11.16 12.78 11.616 12.204 12.528C11.652 13.416 10.992 15.108 10.224 17.604C9.45599 20.1 9.07199 21.852 9.07199 22.86C9.07199 23.388 9.15599 23.748 9.32399 23.94C9.49199 24.108 9.71999 24.192 10.008 24.192C10.512 24.24 11.028 23.808 11.556 22.896C12.108 21.984 12.792 20.208 13.608 17.568C14.352 15.24 14.724 13.548 14.724 12.492C14.724 11.988 14.64 11.64 14.472 11.448C14.328 11.256 14.112 11.16 13.824 11.16Z"/>
@@ -145,9 +144,9 @@
         </svg>
         <nav>
             <ul>
-                <li><svg class="footer__icons" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512"><path d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"/></svg>Proposer un restaurant</li>
-                <li><svg class="footer__icons" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M488 192H336v56c0 39.7-32.3 72-72 72s-72-32.3-72-72V126.4l-64.9 39C107.8 176.9 96 197.8 96 220.2v47.3l-80 46.2C.7 322.5-4.6 342.1 4.3 357.4l80 138.6c8.8 15.3 28.4 20.5 43.7 11.7L231.4 448H368c35.3 0 64-28.7 64-64h16c17.7 0 32-14.3 32-32v-64h8c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24zm147.7-37.4L555.7 16C546.9.7 527.3-4.5 512 4.3L408.6 64H306.4c-12 0-23.7 3.4-33.9 9.7L239 94.6c-9.4 5.8-15 16.1-15 27.1V248c0 22.1 17.9 40 40 40s40-17.9 40-40v-88h184c30.9 0 56 25.1 56 56v28.5l80-46.2c15.3-8.9 20.5-28.4 11.7-43.7z"/></svg>Devenir partenaire</li>
-                <li>Mentions légales</li>
+                <li><svg class="footer__icons" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512"><path d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"/></svg><a href="#">Proposer un restaurant</a></li>
+                <li><svg class="footer__icons" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M488 192H336v56c0 39.7-32.3 72-72 72s-72-32.3-72-72V126.4l-64.9 39C107.8 176.9 96 197.8 96 220.2v47.3l-80 46.2C.7 322.5-4.6 342.1 4.3 357.4l80 138.6c8.8 15.3 28.4 20.5 43.7 11.7L231.4 448H368c35.3 0 64-28.7 64-64h16c17.7 0 32-14.3 32-32v-64h8c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24zm147.7-37.4L555.7 16C546.9.7 527.3-4.5 512 4.3L408.6 64H306.4c-12 0-23.7 3.4-33.9 9.7L239 94.6c-9.4 5.8-15 16.1-15 27.1V248c0 22.1 17.9 40 40 40s40-17.9 40-40v-88h184c30.9 0 56 25.1 56 56v28.5l80-46.2c15.3-8.9 20.5-28.4 11.7-43.7z"/></svg><a href="#">Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
                 <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
             </ul>
         </nav>
