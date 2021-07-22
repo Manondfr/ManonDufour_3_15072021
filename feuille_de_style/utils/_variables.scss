@@ -1,0 +1,18 @@
+// Variables générales
+$font-family:(headings:"Shrikhand", text:"Roboto");
+$font-size:(title:1.4rem, text:0.8rem);
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #f6f6f6;
+$button-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+
+// Variables loading spinner
+$num-dots:3;
+$anim-dur: 500ms;
+$anim-delay: $anim-dur/3;
+$num-letters:8;
+
+// Variable animation apparition des plats
+$num-dishes:10;

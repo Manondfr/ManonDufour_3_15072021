@@ -1,0 +1,11 @@
+@mixin tabletstyle {
+    @media all and (min-width:443px){
+        @content;
+    }
+}
+
+@mixin desktopstyle {
+    @media all and (min-width:993px){
+        @content;
+    }
+}

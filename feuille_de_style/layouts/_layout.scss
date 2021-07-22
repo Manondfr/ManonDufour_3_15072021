@@ -1,0 +1,66 @@
+// Utils
+@import "../utils/variables";
+
+/* PARTIE HEADER ET FOOTER (COMMUNS A TOUTES LES PAGES) */
+/* Header */
+header
+{
+    text-align:center;
+    margin:0 auto;
+    padding:15px 0px 10px 0px;
+    position:relative;
+
+    img
+    {
+        width:40%;
+        @include tabletstyle{
+            width:20%;
+        }
+    }
+
+    svg
+    {
+        position:absolute;
+        left:20px;
+        top:20px;
+        @include desktopstyle{
+            display:none;
+        }
+    }
+}
+
+/* Footer */
+footer
+{
+    background-color:#353535;
+    padding:10px 15px 20px 15px;
+    @include tabletstyle{
+        text-align:center;
+    }
+
+    svg
+    {
+        fill:white;
+        margin-right:10px;
+    }
+
+    ul, li, a
+    {
+        list-style-type:none;
+        color:white;
+        padding:3px 0px;
+        margin:0;
+
+        @include tabletstyle{
+            display:flex;
+            justify-content: space-between;
+        }
+    }
+
+    .footer__icons
+    {
+        @include tabletstyle{
+            display:none;
+        }
+    }   
+}
