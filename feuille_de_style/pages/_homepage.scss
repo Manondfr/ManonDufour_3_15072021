@@ -80,7 +80,6 @@
     animation: loadingend 1ms 3000ms backwards reverse;
 }
 
-
 /* Balises générales*/
 h1
 {
@@ -180,7 +179,6 @@ ol
         font-weight:bold;
         list-style-type:none;
         position:relative;
-        z-index:-1;
         @include tabletstyle{
             padding:10px 10px 10px 25px;
             margin:30px 5px 0px 5px;
@@ -189,8 +187,36 @@ ol
         @include desktopstyle{
             width:25%;
         }  
+
+        &:hover
+        {
+            &::after
+            {
+                opacity:1;
+            }
+
+            & > .functioningSteps__icon
+            {
+                fill:$primary-color;
+            }
+        }
+
+        &::after
+        {
+            content:"";
+            position:absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;  
+            left: 0;
+            background-color:rgba(147,86,220,0.1);
+            opacity: 0;
+            border-radius:15px;
+            transition: opacity 250ms;
+        }
     }
 }
+
 
 .functioningSteps
 {
@@ -206,7 +232,6 @@ ol
         @include tabletstyle {
             left:50%;
             top:-17px;
-            z-index:-1;
         }
     }
 
@@ -216,7 +241,7 @@ ol
         left:-8px;
         top:-4px;
         z-index:-1;
-        fill: $primary-color;
+        fill: $primary-color; 
     }
 
     &__icon
@@ -237,10 +262,14 @@ ol
         }
     }
 
-    &--purple
+    /* &--purple
     {
         background-color:rgba(147,86,220,0.1);
-    } 
+    } */
+
+
+
+
 }
 
 #desktopIcon

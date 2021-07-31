@@ -597,7 +597,6 @@ ol li {
   font-weight: bold;
   list-style-type: none;
   position: relative;
-  z-index: -1;
 }
 
 @media all and (min-width: 443px) {
@@ -614,8 +613,34 @@ ol li {
   }
 }
 
+ol li:hover::after {
+  opacity: 1;
+}
+
+ol li:hover > .functioningSteps__icon {
+  fill: #9356DC;
+}
+
+ol li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(147, 86, 220, 0.1);
+  opacity: 0;
+  border-radius: 15px;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
 .functioningSteps {
   padding: 20px 0px;
+  /* &--purple
+    {
+        background-color:rgba(147,86,220,0.1);
+    } */
 }
 
 .functioningSteps__number {
@@ -630,7 +655,6 @@ ol li {
   .functioningSteps__number {
     left: 50%;
     top: -17px;
-    z-index: -1;
   }
 }
 
@@ -659,10 +683,6 @@ ol li {
 
 .functioningSteps__icon--purple {
   fill: #9356DC;
-}
-
-.functioningSteps--purple {
-  background-color: rgba(147, 86, 220, 0.1);
 }
 
 #desktopIcon {
